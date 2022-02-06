@@ -16,17 +16,16 @@ public class DepositoCombustibleTest {
 	public void testGetDepositoMax() {
 		
 		DepositoCombustible tank = new DepositoCombustible(40.0,40.0);
-		assertEquals(tank.getDepositoNivel(),40.0,0);
-		System.out.print("deposito lleno");
-	
+		assertEquals(tank.getDepositoMax(),40.0,0);
+			
 	}
 
 	@Test
 	public void testEstaVacio() {
 		
 		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
-		assertEquals(tank.getDepositoNivel(),0.0,0);
-		System.out.print("DEPOSITO VACIO");
+		assertTrue(tank.estaVacio());
+		
 	}
 
 	@Test

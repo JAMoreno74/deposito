@@ -16,7 +16,8 @@ public class DepositoCombustible {
 
     private double depMax;
     private double depNivel;
-
+    
+    
    /**
 	* DepositoCombustible es el constructor de la clase. 
 	* 
@@ -32,6 +33,7 @@ public class DepositoCombustible {
 	DepositoCombustible(double tankMax, double tankLevel) {
        this.depMax   = tankMax;
        this.depNivel = tankLevel;
+            
     }
 
    /**
