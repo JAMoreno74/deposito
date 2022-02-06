@@ -20,7 +20,10 @@ public class DepositoCombustibleTest {
 
 	@Test
 	public void testEstaVacio() {
-		fail("No implementado aun");
+		
+		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
+		assertEquals(tank.getDepositoNivel(),0.0,0);
+		System.out.print("DEPOSITO VACIO");
 	}
 
 	@Test
